@@ -687,10 +687,8 @@
                 </div><!-- /.footer-inner -->
             </div><!-- /.container -->
         </section><!-- /#footer-bottom -->
-
     </footer>
     <!-- end Footer -->
-
     </div>
     <!-- end Wrapper -->
 
