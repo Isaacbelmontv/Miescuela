@@ -4,3369 +4,710 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Miescuelaideal</title>
-        <!-- Fonts -->
-        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/bootstrap-slider.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/icomoon.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/chosen.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/prettyPhoto.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/scrollbar.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/morris.css') }}" rel="stylesheet" type="text/css" >
+        <!-- Css -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('bootstrap/css/bootstrap.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('css/selectize.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/YouTubePopUp.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/auto-complete.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/jquery.navhideshow.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/transitions.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/colorv3.css') }}" rel="stylesheet" type="text/css" >
-        <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css" >
-        <script type="text/javascript" src="{{ asset('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+        <link href="{{ asset('css/vanillabox/vanillabox.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
     </head>
+    <body class="page-homepage-carousel">
+    <!-- Wrapper -->
+    <div class="wrapper">
+    <!-- Header -->
+    <div class="navigation-wrapper">
+        <div class="secondary-navigation-wrapper">
+            <div class="container">
+                <div class="navigation-contact pull-left">Llámanos:  <span class="opacity-70">55-55-55-55-55</span></div>
+                <div class="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" name="search" placeholder="Buscar">
+                        <span class="input-group-btn"><button type="submit" id="search-submit" class="btn"><i class="fa fa-search"></i></button></span>
+                    </div><!-- /.input-group -->
+                </div>
+                <!--Menu de arriba-->
+                <!-- <ul class="secondary-navigation list-unstyled">
+                    <li><a href="#">Prospective Students</a></li>
+                    <li><a href="#">Current Students</a></li>
+                    <li><a href="#">Faculty & Staff</a></li>
+                    <li><a href="#">Alumni</a></li>
+                </ul> -->
+            </div>
+        </div><!-- /.secondary-navigation -->
+        <div class="primary-navigation-wrapper">
+            <header class="navbar" id="top" role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand nav" id="brand">
+                            <a href="index.html"><img src="img/logo.png" alt="brand"></a>
+                        </div>
+                    </div>
+                    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#">Home</a>
+                                <!-- <ul class="list-unstyled child-navigation">
+                                    <li><a href="index.html">Homepage Education</a></li>
+                                    <li><a href="homepage-courses.html">Homepage Courses</a></li>
+                                    <li><a href="homepage-events.html">Homepage Events</a></li>
+                                </ul> -->
+                            </li>
+                            <!-- <li>
+                                <a href="#" class=" has-child no-link">Courses</a>
+                                <ul class="list-unstyled child-navigation">
+                                    <li><a href="course-landing-page.html">Course Landing Page</a></li>
+                                    <li><a href="course-listing.html">Course Listing</a></li>
+                                    <li><a href="course-listing-images.html">Course Listing with Images</a></li>
+                                    <li><a href="course-detail-v1.html">Course Detail v1</a></li>
+                                    <li><a href="course-detail-v2.html">Course Detail v2</a></li>
+                                    <li><a href="course-detail-v3.html">Course Detail v3</a></li>
+                                </ul>
+                            </li> -->
+                            <li>
+                                <a href="#" class="has-child no-link">Eventos</a>
+                                <ul class="list-unstyled child-navigation">
+                                    <li><a href="#">Lista de eventos</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="about-us.html">Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                                <!-- <ul class="list-unstyled child-navigation">
+                                    <li><a href="blog-listing.html">Blog listing</a></li>
+                                    <li><a href="blog-detail.html">Blog Detail</a></li>
+                                </ul> -->
+                            </li>
+                            <!-- <li>
+                                <a href="#" class="has-child no-link">Pages</a>
+                                <ul class="list-unstyled child-navigation">
+                                    <li><a href="full-width.html">Fullwidth</a></li>
+                                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                    <li><a href="microsite.html">Microsite</a></li>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="members.html">Members</a></li>
+                                    <li><a href="member-detail.html">Member Detail</a></li>
+                                    <li><a href="register-sign-in.html">Register & Sign In</a></li>
+                                    <li><a href="shortcodes.html">Shortcodes</a></li>
+                                </ul>
+                            </li> -->
+                            <li>
+                                <a href="contact-us.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </nav><!-- /.navbar collapse-->
+                </div><!-- /.container -->
+            </header><!-- /.navbar -->
+        </div><!-- /.primary-navigation -->
+        <div class="background">
+            <img src="img/background-city.png"  alt="background">
+        </div>
+    </div>
+    <!-- end Header -->
 
-    <body class="listar-home listar-hometwo">
-    	<!--[if lt IE 8]>
-    		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    	<![endif]-->
-    	<!--************************************
-    			Preloader Start
-    	*************************************-->
-    	<div class="preloader-outer">
-    		<div class="pin"></div>
-    		<div class="pulse"></div>
-    	</div>
-    	<!--************************************
-    			Preloader End
-    	*************************************-->
-    	<!--************************************
-    			Wrapper Start
-    	*************************************-->
-    	<div id="listar-wrapper" class="listar-wrapper listar-haslayout">
-    		<!--************************************
-    				Header Start
-    		*************************************-->
-    		<header id="listar-header" class="listar-header cd-auto-hide-header listar-headervthree listar-haslayout">
-    			<div class="container-fluid">
-    				<div class="row">
-    					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    						<strong class="listar-logo"><a href="index.html"><img src="images/logov3.png" alt="company logo here"></a></strong>
-    						<nav class="listar-addnav">
-    							<ul>
-    								<li>
-    									<a id="listar-btnsignin" class="listar-btn listar-btnblue" href="#listar-loginsingup">
-    										<i class="icon-smiling-face"></i>
-    										<span>Join Now</span>
-    									</a>
-    								</li>
-    								<li>
-    									<a class="listar-btn listar-btngreen" href="dashboardaddlisting.html">
-    										<i class="icon-plus"></i>
-    										<span>Add Listing</span>
-    									</a>
-    								</li>
-    								<li>
-    									<div class="dropdown listar-themedropdown">
-    										<a id="listar-cartdropdown" class="listar-btn listar-btnround listar-btncartdropdown" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    											<em>2</em>
-    											<i class="icon-icons240"></i>
-    										</a>
-    										<div class="dropdown-menu listar-themedropdownmenu listar-minicart" aria-labelledby="listar-cartdropdown">
-    											<div class="listar-cartitem">
-    												<figure><a href="javascript:void(0);"><img src="images/cart/img-01.jpg" alt="image description"></a></figure>
-    												<div class="listar-iteminfo">
-    													<span>Orange Juice</span>
-    													<span>2 x $15</span>
-    													<a class="listar-btndelate" href="javascript:void(0);">X</a>
-    												</div>
-    											</div>
-    											<div class="listar-cartitem">
-    												<figure><a href="javascript:void(0);"><img src="images/cart/img-01.jpg" alt="image description"></a></figure>
-    												<div class="listar-iteminfo">
-    													<span>Orange Juice</span>
-    													<span>2 x $15</span>
-    													<a class="listar-btndelate" href="javascript:void(0);">X</a>
-    												</div>
-    											</div>
-    											<div class="listar-cartitem listar-totalarea">
-    												<span>Order Total:</span>
-    												<span>$60.00</span>
-    											</div>
-    											<a class="listar-btn listar-btngreen listar-btn-lg" href="javascript:void(0);">View Bag &amp; Checkout</a>
-    										</div>
-    									</div>
-    								</li>
-    							</ul>
-    						</nav>
-    						<nav id="listar-nav" class="listar-nav">
-    							<div class="navbar-header">
-    								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#listar-navigation" aria-expanded="false">
-    									<span class="sr-only">Toggle navigation</span>
-    									<span class="icon-bar"></span>
-    									<span class="icon-bar"></span>
-    									<span class="icon-bar"></span>
-    								</button>
-    							</div>
-    							<div id="listar-navigation" class="collapse navbar-collapse listar-navigation">
-    								<ul>
-    									<li class="menu-item-has-children current-menu-item">
-    										<a href="javascript:void(0);">Home</a>
-    										<ul class="sub-menu">
-    											<li><a href="index.html">Home v 1</a></li>
-    											<li><a href="indexv2.html">Home v 2</a></li>
-    											<li class="current-menu-item"><a href="indexv3.html">Home v 3</a></li>
-    											<li><a href="indexv4.html">Home v 4</a></li>
-    										</ul>
-    									</li>
-    									<li class="menu-item-has-children">
-    										<a href="javascript:void(0);">Explore</a>
-    										<ul class="sub-menu">
-    											<li><a href="listingvlist.html">All Listings</a></li>
-    											<li class="menu-item-has-children">
-    												<a href="javascript:void(0);">Food</a>
-    												<ul class="sub-menu">
-    													<li><a href="listingv1.html">Cafe</a></li>
-    													<li><a href="listingv2.html">Restaurant</a></li>
-    													<li><a href="listingv1.html">Dinner</a></li>
-    													<li><a href="listingv2.html">Pizza Place</a></li>
-    													<li><a href="listingv1.html">Italian</a></li>
-    													<li><a href="listingv2.html">Bakeries</a></li>
-    												</ul>
-    											</li>
-    											<li class="menu-item-has-children">
-    												<a href="javascript:void(0);">Entertainment</a>
-    												<ul class="sub-menu">
-    													<li><a href="listingv1.html">Art &amp; Design</a></li>
-    													<li><a href="listingv2.html">Movie Theater</a></li>
-    													<li><a href="listingv1.html">Theme Parks</a></li>
-    													<li><a href="listingv2.html">Music Life</a></li>
-    												</ul>
-    											</li>
-    											<li class="menu-item-has-children">
-    												<a href="javascript:void(0);">Educational</a>
-    												<ul class="sub-menu">
-    													<li><a href="listingv1.html">School</a></li>
-    													<li><a href="listingv2.html">College</a></li>
-    													<li><a href="listingv1.html">University</a></li>
-    													<li><a href="listingv2.html">Short Courses</a></li>
-    												</ul>
-    											</li>
-    											<li class="menu-item-has-children">
-    												<a href="javascript:void(0);">Nightlife</a>
-    												<ul class="sub-menu">
-    													<li><a href="listingv1.html">Wine Bars</a></li>
-    													<li><a href="listingv2.html">Pubs</a></li>
-    													<li><a href="listingv1.html">Nightclub</a></li>
-    													<li><a href="listingv2.html">Lounge</a></li>
-    												</ul>
-    											</li>
-    											<li class="menu-item-has-children">
-    												<a href="javascript:void(0);">Outdoors</a>
-    												<ul class="sub-menu">
-    													<li><a href="listingv1.html">Boutiques</a></li>
-    													<li><a href="listingv2.html">Fashion</a></li>
-    													<li><a href="listingv1.html">Furniture</a></li>
-    													<li><a href="listingv2.html">Sport Equipment</a></li>
-    												</ul>
-    											</li>
-    										</ul>
-    									</li>
-    									<li class="menu-item-has-children">
-    										<a href="javascript:void(0);">Pages</a>
-    										<ul class="sub-menu">
-    											<li><a href="howitwork.html">How It Works</a></li>
-    											<li><a href="services.html">Services</a></li>
-    											<li><a href="pkgprice.html">Packages</a></li>
-    											<li><a href="testimonials.html">Testimonials</a></li>
-    											<li><a href="contactus.html">Contact Us</a></li>
-    											<li><a href="404error.html">404 Error</a></li>
-    											<li><a href="comingsoon.html">Coming Sooon</a></li>
-    										</ul>
-    									</li>
-    									<li class="menu-item-has-children">
-    										<a href="javascript:void(0);">News</a>
-    										<ul class="sub-menu">
-    											<li><a href="newsv1.html">Blog Standard</a></li>
-    											<li><a href="newsv2.html">Blog Classic</a></li>
-    											<li><a href="newsv3.html">Blog sidebar</a></li>
-    										</ul>
-    									</li>
-    									<li><a href="dashboard.html">Dasboard</a></li>
-    								</ul>
-    							</div>
-    						</nav>
-    					</div>
-    				</div>
-    			</div>
-    		</header>
-    		<!--************************************
-    				Header End
-    		*************************************-->
-    		<!--************************************
-    				Home Slider Start
-    		*************************************-->
-    		<div id=" listar-homebannervthree" class=" listar-homebannervthree">
-    			<figure><img src="images/parallax/bgparallax-10.jpg" alt="image description"></figure>
-    			<div id="listar-homebanner" class="listar-homebanner">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    							<div class="listar-bannercontent">
-    								<h1>Find Local Services</h1>
-    								<div class="listar-description">
-    									<p>Find the best places in the city for food, activities and relaxation</p>
-    								</div>
-    								<form class="listar-formtheme listar-formsearchlisting">
-    									<fieldset>
-    										<div class="form-group listar-inputwithicon">
-    											<i class="icon-layers"></i>
-    											<div class="listar-select">
-    												<select id="listar-categorieschosen" class="listar-categorieschosen listar-chosendropdown">
-    													<option>Ex: Food, Retail, hotel, cinema</option>
-    													<option class="icon-entertainment">Art &amp; Entertainment</option>
-    													<option class="icon-spa">Beauty &amp; Health</option>
-    													<option class="icon-education">Education</option>
-    													<option class="icon-healthfitness">Fitness</option>
-    													<option class="icon-tourism">Hotels</option>
-    													<option class="icon-localservice">Motor Mechanic</option>
-    													<option class="icon-nightlife">Night Life</option>
-    													<option class="icon-foods">Restaurant</option>
-    													<option class="icon-museum">Real Estate</option>
-    													<option class="icon-shopping">Shopping</option>
-    												</select>
-    											</div>
-    										</div>
-    										<div class="form-group listar-inputwithicon">
-    											<i class="icon-global"></i>
-    											<div class="listar-select listar-selectlocation">
-    												<select id="listar-locationchosen" class="listar-locationchosen listar-chosendropdown">
-    													<option>Choose a Location</option>
-    													<option>Lahore</option>
-    													<option>Bayonne</option>
-    													<option>Greenville</option>
-    													<option>Manhattan</option>
-    													<option>Queens</option>
-    													<option>The Heights</option>
-    												</select>
-    											</div>
-    										</div>
-    										<div class="form-group listar-inputwithicon">
-    											<i class=""><img src="images/icons/iconw-01.png" alt="image description"></i>
-    											<p>Price: </p>
-    											<input id="listar-rangeslider" class="listar-rangeslider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14">
-    										</div>
-    										<button type="button" class="listar-btn listar-btngreen">Search Places</button>
-    									</fieldset>
-    								</form>
-    								<div class="listar-bestplacesincity">
-    									<div class="listar-bestplacestitle">
-    										<h2>Find the Best<span>Places in the City</span></h2>
-    									</div>
-    									<ul>
-    										<li>
-    											<i class="icon-foods"></i>
-    											<h3>Restaurant</h3>
-    										</li>
-    										<li>
-    											<i class="icon-nightlife"></i>
-    											<h3>Night Life</h3>
-    										</li>
-    										<li>
-    											<i class="icon-entertainment"></i>
-    											<h3>Entertainment</h3>
-    										</li>
-    										<li>
-    											<i class="icon-localservice"></i>
-    											<h3>Local Services</h3>
-    										</li>
-    										<li>
-    											<i class="icon-healthfitness"></i>
-    											<h3>health &amp; Fitness</h3>
-    										</li>
-    										<li>
-    											<i class="icon-tourism"></i>
-    											<h3>Tourism</h3>
-    										</li>
-    									</ul>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    		<!--************************************
-    				Home Slider End
-    		*************************************-->
-    		<!--************************************
-    				Main Start
-    		*************************************-->
-    		<main id="listar-main" class="listar-main listar-haslayout">
-    			<!--************************************
-    					Explore The City Start
-    			*************************************-->
-    			<section class="listar-sectionspace listar-haslayout">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    							<div class="listar-sectionhead">
-    								<div class="listar-sectiontitle">
-    									<h2>Popular Categories</h2>
-    								</div>
-    								<div class="listar-description">
-    									<p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra doloremque laudantium, totam rem aperiam</p>
-    								</div>
-    							</div>
-    							<div class="listar-horizontalthemescrollbar">
-    								<div class="listar-themeposts listar-categoryposts">
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-29.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-foods"></i></span>
-    														<h3>Restaurant</h3>
-    														<h4>Food and Drinks</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-30.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-entertainment"></i></span>
-    														<h3>Cinema</h3>
-    														<h4>Entertainment</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-31.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-nightlife"></i></span>
-    														<h3>Dance Floor</h3>
-    														<h4>Night Life</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-29.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-foods"></i></span>
-    														<h3>Restaurant</h3>
-    														<h4>Food and Drinks</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-30.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-entertainment"></i></span>
-    														<h3>Cinema</h3>
-    														<h4>Entertainment</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-31.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-nightlife"></i></span>
-    														<h3>Dance Floor</h3>
-    														<h4>Night Life</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-29.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-foods"></i></span>
-    														<h3>Restaurant</h3>
-    														<h4>Food and Drinks</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-30.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-entertainment"></i></span>
-    														<h3>Cinema</h3>
-    														<h4>Entertainment</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    									<div class="listar-themepost listar-categorypost">
-    										<figure class="listar-featuredimg">
-    											<a href="javascript:void(0);">
-    												<img src="images/post/img-31.jpg" alt="image description">
-    												<div class="listar-contentbox">
-    													<div class="listar-postcontent">
-    														<span class="listar-categoryicon listar-flip"><i class="icon-nightlife"></i></span>
-    														<h3>Dance Floor</h3>
-    														<h4>Night Life</h4>
-    													</div>
-    												</div>
-    											</a>
-    										</figure>
-    									</div>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<!--************************************
-    					Explore The City End
-    			*************************************-->
-    			<!--************************************
-    					Add Listing Start
-    			*************************************-->
-    			<section class="listar-sectionspace listar-addlistingarea">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-push-2 col-md-8 col-lg-push-2 col-lg-8">
-    							<div class="listar-addlisting">
-    								<h2>Run and Grow Your Business With Listing Star from Anywhere</h2>
-    								<a class="listar-btn listar-btngreen" href="javascript:void(0);">
-    									<i class="icon-plus"></i>
-    									<span>Add Listing</span>
-    								</a>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<!--************************************
-    					Add Listing End
-    			*************************************-->
-    			<!--************************************
-    					Theme Features Start
-    			*************************************-->
-    			<section class="listar-sectionspace listar-bglight listar-haslayout">
-    				<div class="container">
-    					<div class="row">
-    						<div class="listar-features listar-featuresvthree">
-    							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-    								<div class="listar-feature">
-    									<i class="icon-layers"></i>
-    									<h2><span class="listar-bluethemecolor">01</span> Choose a Category</h2>
-    									<div class="listar-description">
-    										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tempor cum soluta nobis consectetuer nihil imperdiet doming...</p>
-    									</div>
-    								</div>
-    							</div>
-    							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-    								<div class="listar-feature">
-    									<i class="icon-map3"></i>
-    									<h2><span class="listar-bluethemecolor">02</span> Find Location</h2>
-    									<div class="listar-description">
-    										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tempor cum soluta nobis consectetuer nihil imperdiet doming...</p>
-    									</div>
-    								</div>
-    							</div>
-    							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-    								<div class="listar-feature">
-    									<i class="icon-hotairballoon"></i>
-    									<h2><span class="listar-bluethemecolor">03</span> Go have Fun</h2>
-    									<div class="listar-description">
-    										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tempor cum soluta nobis consectetuer nihil imperdiet doming...</p>
-    									</div>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<!--************************************
-    					Theme Features End
-    			*************************************-->
-    			<!--************************************
-    					Recent Listing Start
-    			*************************************-->
-    			<section class="listar-sectionspace listar-recentlistingarea">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    							<div class="listar-sectionhead">
-    								<div class="listar-sectiontitle">
-    									<h2>Recent Listings</h2>
-    								</div>
-    								<ul class="tg-themetabnav" role="tablist">
-    									<li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab">Food &amp; Drinks</a></li>
-    									<li role="presentation"><a href="#two" aria-controls="two" role="tab" data-toggle="tab">Night Life</a></li>
-    									<li role="presentation"><a href="#three" aria-controls="three" role="tab" data-toggle="tab">Local Services</a></li>
-    									<li role="presentation"><a href="#four" aria-controls="four" role="tab" data-toggle="tab">Entertainment</a></li>
-    									<li role="presentation"><a href="#five" aria-controls="five" role="tab" data-toggle="tab">Health &amp; Fitness</a></li>
-    								</ul>
-    							</div>
-    							<div class="tab-content tg-themetabcontent">
-    								<div role="tabpanel" class="tab-pane active" id="one">
-    									<div id="listar-recentlistingsliderone" class="listar-themeposts listar-recentlistingslider listar-threecolumnsslider owl-carousel">
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    									</div>
-    								</div>
-    								<div role="tabpanel" class="tab-pane" id="two">
-    									<div id="listar-recentlistingslidertwo" class="listar-themeposts listar-recentlistingslider listar-threecolumnsslider owl-carousel">
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    									</div>
-    								</div>
-    								<div role="tabpanel" class="tab-pane" id="three">
-    									<div id="listar-recentlistingsliderthree" class="listar-themeposts listar-recentlistingslider listar-threecolumnsslider owl-carousel">
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    									</div>
-    								</div>
-    								<div role="tabpanel" class="tab-pane" id="four">
-    									<div id="listar-recentlistingsliderfour" class="listar-themeposts listar-recentlistingslider listar-threecolumnsslider owl-carousel">
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    									</div>
-    								</div>
-    								<div role="tabpanel" class="tab-pane" id="five">
-    									<div id="listar-recentlistingsliderfive" class="listar-themeposts listar-recentlistingslider listar-threecolumnsslider owl-carousel">
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingvlist.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv2.html"><img src="images/post/img-13.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv2.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-nightlife"></i>
-    															<span>Night Life</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-14.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv1.html" class="listar-category">
-    															<i class="icon-tourism"></i>
-    															<span>Hotel</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    										<div class="item">
-    											<div class="listar-themepost listar-placespost">
-    												<figure class="listar-featuredimg"><a href="detailv1.html"><img src="images/post/img-15.jpg" alt="image description"></a></figure>
-    												<div class="listar-postcontent">
-    													<h3><a href="detailv1.html">Tourist Guide</a></h3>
-    													<div class="listar-description">
-    														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
-    													</div>
-    													<div class="listar-reviewcategory">
-    														<div class="listar-review">
-    															<span class="listar-stars"><span></span></span>
-    															<em>(3 Review)</em>
-    														</div>
-    														<a href="listingv2.html" class="listar-category">
-    															<i class="icon-foods"></i>
-    															<span>Food and Drinks</span>
-    														</a>
-    													</div>
-    													<div class="listar-themepostfoot">
-    														<a class="listar-location" href="javascript:void(0);">
-    															<i class="icon-icons74"></i>
-    															<em>New York</em>
-    														</a>
-    														<div class="listar-postbtns">
-    															<a class="listar-btnquickinfo" href="#" data-toggle="modal" data-target=".listar-placequickview"><i class="icon-expand"></i></a>
-    															<a class="listar-btnquickinfo" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    															<div class="listar-btnquickinfo">
-    																<div class="listar-shareicons">
-    																	<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    																	<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    																</div>
-    																<a class="listar-btnshare" href="javascript:void(0);">
-    																	<i class="icon-share3"></i>
-    																</a>
-    															</div>
-    														</div>
-    													</div>
-    												</div>
-    											</div>
-    										</div>
-    									</div>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<!--************************************
-    					Recent Listing End
-    			*************************************-->
-    			<!--************************************
-    					Spanish Resturent Start
-    			*************************************-->
-    			<section class="listar-spanishresturent">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    							<div class="listar-spanishresturentbox">
-    								<div class="listar-spanishresturentcontent">
-    									<h2>Spanish Restaurant</h2>
-    									<div class="listar-description">
-    										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</p>
-    									</div>
-    									<a class="listar-btn listar-btngreen" href="javascript:void(0);">Read More</a>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<!--************************************
-    					Spanish Resturent End
-    			*************************************-->
-    			<!--************************************
-    					Pricing Plans Start
-    			*************************************-->
-    			<section class="listar-sectionspace listar-haslayout">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    							<div class="listar-pricingplans listar-pricingplansvtwo">
-    								<div class="listar-pricingplan">
-    									<div class="listar-pricingplanhead">
-    										<span class="listar-planicon"><i class="icon-layers"></i></span>
-    										<h2>Basic</h2>
-    										<div class="listar-description">
-    											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Aliquam erat volutpat</p>
-    										</div>
-    									</div>
-    									<div class="listar-pricingplanbody">
-    										<h3>Free</h3>
-    										<h4>3 Listings</h4>
-    									</div>
-    									<a class="listar-btn listar-btnblue" href="javascript:void(0);">Start Now</a>
-    								</div>
-    								<div class="listar-pricingplan listar-hotplan">
-    									<div class="listar-pricingplanhead">
-    										<span class="listar-planicon"><i class="icon-layers"></i></span>
-    										<h2>Extended</h2>
-    										<div class="listar-description">
-    											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Aliquam erat volutpat</p>
-    										</div>
-    									</div>
-    									<div class="listar-pricingplanbody">
-    										<h3><sup>$</sup>12</h3>
-    										<h4>70 Listing</h4>
-    									</div>
-    									<a class="listar-btn listar-btn listar-btngreen" href="javascript:void(0);">Start Now</a>
-    								</div>
-    								<div class="listar-pricingplan">
-    									<div class="listar-pricingplanhead">
-    										<span class="listar-planicon"><i class="icon-layers"></i></span>
-    										<h2>Professional</h2>
-    										<div class="listar-description">
-    											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Aliquam erat volutpat</p>
-    										</div>
-    									</div>
-    									<div class="listar-pricingplanbody">
-    										<h3><sup>$</sup>61</h3>
-    										<h4>150 Listing</h4>
-    									</div>
-    									<a class="listar-btn listar-btn listar-btngreen" href="javascript:void(0);">Start Now</a>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<!--************************************
-    					Pricing Plans End
-    			*************************************-->
-    			<!--************************************
-    					Newsletter Start
-    			*************************************-->
-    			<section class="listar-newsletterarea">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    							<div class="listar-sectionhead">
-    								<div class="listar-sectiontitle">
-    									<h2>Newsletter</h2>
-    								</div>
-    								<div class="listar-description">
-    									<p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra doloremque laudantium, totam rem aperiam</p>
-    								</div>
-    							</div>
-    							<div class="listar-formarea">
-    								<form class="listar-formtheme listar-formnewsletter">
-    									<fieldset>
-    										<input type="email" name="email" class="form-control" placeholder="Your email address">
-    										<button class="listar-btn listar-btngreen" type="button">Submit</button>
-    									</fieldset>
-    								</form>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</section>
-    			<!--************************************
-    					Newsletter End
-    			*************************************-->
-    		</main>
-    		<!--************************************
-    				Main End
-    		*************************************-->
-    		<!--************************************
-    				Footer Start
-    		*************************************-->
-    		<footer id="listar-footer" class="listar-footer listar-footervtwo listar-haslayout">
-    			<div class="listar-footeraboutarea">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    							<div class="listar-upperbox">
-    								<strong class="listar-logo"><a href="javascript:void(0);"><img src="images/logov3b.png" alt="image description"></a></strong>
-    								<ul class="listar-socialicons">
-    									<li class="listar-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-    									<li class="listar-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-    									<li class="listar-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-    									<li class="listar-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
-    									<li class="listar-vimeo"><a href="javascript:void(0);"><i class="fa fa-vimeo"></i></a></li>
-    								</ul>
-    								<nav class="listar-navfooter">
-    									<ul>
-    										<li><a href="javascript:void(0);">Home</a></li>
-    										<li><a href="javascript:void(0);">how it work</a></li>
-    										<li><a href="javascript:void(0);">Shop</a></li>
-    										<li><a href="javascript:void(0);">Packages</a></li>
-    										<li><a href="javascript:void(0);">News</a></li>
-    										<li><a href="javascript:void(0);">Contact Us</a></li>
-    									</ul>
-    								</nav>
-    							</div>
-    							<div class="listar-lowerbox">
-    								<div class="listar-description">
-    									<p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat Lorem ipsum dolor sit amet.</p>
-    								</div>
-    								<address><strong>Address:</strong> No.200 Josecph, San Francisco <span><strong>Tel:</strong> 01-987-654-3210</span></address>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="listar-footerbar">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    							<span class="listar-copyright">Copyright &copy; 2018 Listingstar. All rights reserved.</span>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</footer>
-    		<!--************************************
-    				Footer End
-    		*************************************-->
-    	</div>
-    	<!--************************************
-    			Wrapper End
-    	*************************************-->
-    	<!--************************************
-    			Theme Modal Box Start
-    	*************************************-->
-    	<div class="modal fade listar-placequickview" tabindex="-1" role="dialog">
-    		<div class="modal-dialog listar-modaldialog" role="document">
-    			<div class="modal-content listar-modalcontent">
-    				<div class="listar-themepost listar-placespost">
-    					<span class="listar-btnclosequickview" data-toggle="modal" data-target=".listar-placequickview">X</span>
-    					<figure class="listar-featuredimg" data-vide-bg="poster: images/post/img-16.jpg" data-vide-options="position: 50% 50%">
-    						<span class="listar-contactnumber">
-    							<i class="icon-"><img src="images/icons/icon-03.png" alt="image description"></i>
-    							<em> + 7890 456 133</em>
-    						</span>
-    					</figure>
-    					<div class="listar-postcontent">
-    						<h3><a href="javascript:void(0);">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
-    						<div class="listar-description">
-    							<p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit Nam in mauris quis libero sodales eleifend amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus</p>
-    						</div>
-    						<ul class="listar-listfeatures">
-    							<li>Pets allowed</li>
-    							<li>Kitchen</li>
-    							<li>Internet</li>
-    							<li>Suitable for events</li>
-    							<li>Gym</li>
-    							<li>Dryer</li>
-    							<li>Hot tub</li>
-    							<li>Family/kid friendly</li>
-    							<li>Wireless Internet</li>
-    						</ul>
-    						<div class="listar-reviewcategory">
-    							<div class="listar-review">
-    								<span class="listar-stars"><span></span></span>
-    								<em>(3 Review)</em>
-    							</div>
-    							<a href="javascript:void(0);" class="listar-category">
-    								<i class="icon-tourism"></i>
-    								<span>Hotel</span>
-    							</a>
-    						</div>
-    						<div class="listar-themepostfoot">
-    							<span class="listar-openinghours">
-    								<i class="icon-alarmclock2"></i>
-    								<em>Today <span class="listar-greenthemecolor">Open Now</span> 10:00 AM - 5:00 PM</em>
-    							</span>
-    							<div class="listar-postbtns">
-    								<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
-    								<div class="listar-btnquickinfo">
-    									<div class="listar-shareicons">
-    										<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-    										<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
-    										<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
-    									</div>
-    									<a class="listar-btnshare" href="javascript:void(0);">
-    										<i class="icon-share3"></i>
-    									</a>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    	<!--************************************
-    			Theme Modal Box End
-    	*************************************-->
-    	<!--************************************
-    			Login Singup Start
-    	*************************************-->
-    	<div id="listar-loginsingup" class="listar-loginsingup">
-    		<button type="button" class="listar-btnclose">x</button>
-    		<figure class="listar-loginsingupimg" data-vide-bg="poster: images/bgjoin.jpg" data-vide-options="position: 50% 50%"></figure>
-    		<div class="listar-contentarea">
-    			<div class="listar-themescrollbar">
-    				<div class="listar-logincontent">
-    					<div class="listar-themetabs">
-    						<ul class="listar-tabnavloginregistered" role="tablist">
-    							<li role="presentation" class="active"><a href="#listar-loging" data-toggle="tab">Log in</a></li>
-    							<li role="presentation"><a href="#listar-register" data-toggle="tab">Register</a></li>
-    						</ul>
-    						<div class="tab-content listar-tabcontentloginregistered">
-    							<div role="tabpanel" class="tab-pane active fade in" id="listar-loging">
-    								<form class="listar-formtheme listar-formlogin">
-    									<fieldset>
-    										<div class="form-group listar-inputwithicon">
-    											<i class="icon-profile-male"></i>
-    											<input type="text" name="username" class="form-control" placeholder="Username Or Email">
-    										</div>
-    										<div class="form-group listar-inputwithicon">
-    											<i class="icon-icons208"></i>
-    											<input type="password" name="password" class="form-control" placeholder="Password">
-    										</div>
-    										<div class="form-group">
-    											<div class="listar-checkbox">
-    												<input type="checkbox" name="remember" id="rememberpass2">
-    												<label for="rememberpass2">Remember me</label>
-    											</div>
-    											<span><a href="#">Lost your Password?</a></span>
-    										</div>
-    										<button class="listar-btn listar-btngreen">Register</button>
-    									</fieldset>
-    								</form>
-    							</div>
-    							<div role="tabpanel" class="tab-pane fade" id="listar-register">
-    								<form class="listar-formtheme listar-formlogin">
-    									<fieldset>
-    										<div class="form-group listar-inputwithicon">
-    											<i class="icon-profile-male"></i>
-    											<input type="text" name="username" class="form-control" placeholder="Username">
-    										</div>
-    										<div class="form-group listar-inputwithicon">
-    											<i class="icon-icons208"></i>
-    											<input type="email" name="emailaddress" class="form-control" placeholder="Email Address">
-    										</div>
-    										<div class="form-group listar-inputwithicon">
-    											<i class="icon-lock-stripes"></i>
-    											<input type="password" name="password" class="form-control" placeholder="Password">
-    										</div>
-    										<div class="form-group listar-inputwithicon">
-    											<i class="icon-lock-stripes"></i>
-    											<input type="password" name="confirmpassword" class="form-control" placeholder="Password">
-    										</div>
-    										<button class="listar-btn listar-btngreen">login</button>
-    									</fieldset>
-    								</form>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="listar-shareor"><span>or</span></div>
-    					<div class="listar-signupwith">
-    						<h2>Sign in With...</h2>
-    						<ul class="listar-signinloginwithsocialaccount">
-    							<li class="listar-facebook"><a href="javascript:void(0);"><i class="icon-facebook-1"></i><span>Facebook</span></a></li>
-    							<li class="listar-twitter"><a href="javascript:void(0);"><i class="icon-twitter-1"></i><span>Twitter</span></a></li>
-    							<li class="listar-googleplus"><a href="javascript:void(0);"><i class="icon-google4"></i><span>Google +</span></a></li>
-    						</ul>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+    <!-- Page Content -->
+    <div id="page-content">
+    <!-- Slider -->
+    <div id="homepage-carousel">
+        <div class="container">
+            <div class="homepage-carousel-wrapper">
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <div class="image-carousel">
+                            <div class="image-carousel-slide"><img src="img/slide-1.jpg" alt=""></div>
+                            <div class="image-carousel-slide"><img src="img/slide-2.jpg" alt=""></div>
+                            <div class="image-carousel-slide"><img src="img/slide-3.jpg" alt=""></div>
+                        </div><!-- /.slider-image -->
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 col-sm-5">
+                        <div class="slider-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Encuentra tu escuela ideal</h1>
+                                    <form id="slider-form" role="form" action="" method="post">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Nombre" type="text" required>
+                                                </div>
+                                            </div><!-- /.col-md-6 -->
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <input class="form-control has-dark-background" name="slider-email" id="slider-email" placeholder="Correo" type="email" required>
+                                                </div>
+                                            </div><!-- /.col-md-6 -->
+                                        </div><!-- /.row -->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <select name="slider-study-level" id="slider-study-level" class="has-dark-background">
+                                                        <option value="- Not selected -">Nivel educativo</option>
+                                                        <option value="preparatoria">Preparatoria</option>
+                                                        <option value="universidad">Universidad</option>
+                                                    </select>
+                                                </div><!-- /.form-group -->
+                                            </div><!-- /.col-md-6 -->
+                                            <!-- <div class="col-md-6"> -->
+                                                <!-- <div class="input-group">
+                                                    <select name="slider-course" id="slider-course" class="has-dark-background">
+                                                        <option value="- Not selected -">Courses</option>
+                                                        <option value="Art and Design">Art and Design</option>
+                                                        <option value="Marketing">Marketing</option>
+                                                        <option value="Science">Science</option>
+                                                        <option value="History and Psychology"></option>
+                                                    </select>
+                                                </div> -->
+                                                <!-- /.form-group -->
+                                            <!-- </div> -->
+                                            <!-- /.col-md-6 -->
+                                        </div><!-- /.row -->
+                                        <button type="submit" id="slider-submit" class="btn btn-framed pull-right">Enviar</button>
+                                        <div id="form-status"></div>
+                                    </form>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.slider-content -->
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+                <div class="background"></div>
+            </div><!-- /.slider-wrapper -->
+            <div class="slider-inner"></div>
+        </div><!-- /.container -->
+    </div>
+    <!-- end Slider -->
 
-      <!--script-->
-              <script type="text/javascript" src="{{ asset('js/vendor/jquery-library.js') }}"></script>
+    <!-- News, Events, About -->
+    <div class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <section class="news-small" id="news-small">
+                        <header>
+                            <h2>Noticias</h2>
+                        </header>
+                        <div class="section-content">
+                            <article>
+                                <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
+                                <header><a href="#">U-M School of Public Health, Detroit partners aim to improve air quality in the city</a></header>
+                            </article><!-- /article -->
+                            <article>
+                                <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
+                                <header><a href="#">At 50, Center for the Education of Women celebrates a wider mission</a></header>
+                            </article><!-- /article -->
+                            <article>
+                                <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
+                                <header><a href="#">Three U-Michigan scientists receive Sloan fellowships</a></header>
+                            </article><!-- /article -->
+                        </div><!-- /.section-content -->
+                        <a href="" class="read-more stick-to-bottom">Todas las noticias</a>
+                    </section><!-- /.news-small -->
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-4 col-sm-6">
+                    <section class="events small" id="events-small">
+                        <header>
+                            <h2>Eventos</h2>
+                            <a href="" class="link-calendar">Calendar</a>
+                        </header>
+                        <div class="section-content">
+                            <article class="event nearest">
+                                <figure class="date">
+                                    <div class="month">jan</div>
+                                    <div class="day">18</div>
+                                </figure>
+                                <aside>
+                                    <header>
+                                        <a href="event-detail.html">Conservatory Exhibit: The garden of india a country and culture revealed</a>
+                                    </header>
+                                    <div class="additional-info">Matthaei Botanical Gardens</div>
+                                </aside>
+                            </article><!-- /article -->
+                            <article class="event nearest-second">
+                                <figure class="date">
+                                    <div class="month">feb</div>
+                                    <div class="day">01</div>
+                                </figure>
+                                <aside>
+                                    <header>
+                                        <a href="event-detail.html">February Half-Term Activities: Big Stars and Little Secrets </a>
+                                    </header>
+                                    <div class="additional-info clearfix" >Pitt Rivers and Natural History Museums</div>
+                                </aside>
+                            </article><!-- /article -->
+                            <article class="event">
+                                <figure class="date">
+                                    <div class="month">mar</div>
+                                    <div class="day">23</div>
+                                </figure>
+                                <aside>
+                                    <header>
+                                        <a href="event-detail.html">The Orchestra of the Age of Enlightenment perform with Music</a>
+                                    </header>
+                                    <div class="additional-info">Faculty of Music</div>
+                                </aside>
+                            </article><!-- /article -->
+                        </div><!-- /.section-content -->
+                    </section><!-- /.events-small -->
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-4 col-sm-12">
+                    <section id="about">
+                        <header>
+                            <h2>Acerca de  Miescuelaideal</h2>
+                        </header>
+                        <div class="section-content">
+                            <img src="img/students.jpg" alt="" class="add-margin">
+                            <p><strong>Welcome o Universo.</strong> Premium HTML Template for schools, universieties and other educational institutes.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet semper tincidunt.
+                                Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                            <a href="" class="read-more stick-to-bottom">Leer más</a>
+                        </div><!-- /.section-content -->
+                    </section><!-- /.about -->
+                </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+    <!-- end News, Events, About -->
 
-              <script type="text/javascript" src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/mapclustering/data.json') }}"></script>
-              <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en" charset="utf-8"></script>
-              <script type="text/javascript" src="{{ asset('js/tinymce/tinymce.min.js?apiKey=4cuu2crphif3fuls3yb1pe4qrun9pkq99vltezv2lv6sogci') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/mapclustering/markerclusterer.min.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/mapclustering/infobox.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/mapclustering/map.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/ResizeSensor.js.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/jquery.sticky-sidebar.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/YouTubePopUp.jquery.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/jquery.navhideshow.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/backgroundstretch.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/jquery.sticky-kit.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/bootstrap-slider.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/jquery.vide.min.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('JS/auto-complete.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/chosen.jquery.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/scrollbar.min.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/isotope.pkgd.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/jquery.steps.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/prettyPhoto.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/raphael-min.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/parallax.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/sortable.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/countTo.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/appear.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/gmap3.js') }}"></script>
-              <script type="text/javascript" src="{{ asset('js/dev_themefunction.js') }}"></script>
+    <!-- Testimonial -->
+    <section id="testimonials">
+        <div class="block">
+            <div class="container">
+                <div class="author-carousel">
+                    <div class="author">
+                        <blockquote>
+                            <figure class="author-picture"><img src="img/student-testimonial.jpg" alt=""></figure>
+                            <article class="paragraph-wrapper">
+                                <div class="inner">
+                                    <header>Morbi nec nisi ante. Quisque lacus ligula, iaculis in elit et, interdum semper quam. Fusce in interdum tortor.
+                                        Ut sollicitudin lectus dolor eget imperdiet libero pulvinar sit amet.</header>
+                                    <footer>Claire Doe</footer>
+                                </div>
+                            </article>
+                        </blockquote>
+                    </div><!-- /.author -->
+                    <div class="author">
+                        <blockquote>
+                            <figure class="author-picture"><img src="img/student-testimonial.jpg" alt=""></figure>
+                            <article class="paragraph-wrapper">
+                                <div class="inner">
+                                    <header>Morbi nec nisi ante. Quisque lacus ligula, iaculis in elit et, interdum semper quam. Fusce in interdum tortor.
+                                        Ut sollicitudin lectus dolor eget imperdiet libero pulvinar sit amet.</header>
+                                    <footer>Claire Doe</footer>
+                                </div>
+                            </article>
+                        </blockquote>
+                    </div><!-- /.author -->
+                </div><!-- /.author-carousel -->
+            </div><!-- /.container -->
+        </div><!-- /.block -->
+    </section>
+    <!-- end Testimonial -->
+
+    <!-- Academic Life, Campus Life, Newsletter -->
+    <div class="block">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-4 col-sm-4">
+                    <section id="academic-life">
+                        <header>
+                            <h2>Academic Life & Research</h2>
+                        </header>
+                        <div class="section-content">
+                            <ul class="list-links">
+                                <li><a href="#">Programs and Areas</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Graduate & Postdoctoral Programs</a></li>
+                                <li><a href="#">Continuing Studies</a></li>
+                                <li><a href="#">International Activities</a></li>
+                                <li><a href="#">Course Calendars & Listings</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div> -->
+
+                <!-- <div class="col-md-4 col-sm-4">
+                    <section id="campus-life">
+                        <header>
+                            <h2>Campus Life</h2>
+                        </header>
+                        <div class="section-content">
+                             <ul class="list-links">
+                                <li><a href="#">Athletics & Recreation</a></li>
+                                <li><a href="#">Clubs & Extra-curricular Activities</a></li>
+                                <li><a href="#">Health & Wellness</a></li>
+                                <li><a href="#">Housing & Residence</a></li>
+                                <li><a href="#">Arts & Culture</a></li>
+                                <li><a href="#">Student IT Services</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div> -->
+
+                <div class="col-md-4 col-sm-4">
+                    <section id="newsletter">
+                        <header>
+                            <h2>Newsletter</h2>
+                            <div class="section-content">
+                                <div class="newsletter">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Ingresa tú correo">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn"><i class="fa fa-angle-right"></i></button>
+                                        </span>
+                                    </div><!-- /input-group -->
+                                </div><!-- /.newsletter -->
+                                <!-- <p class="opacity-50">Ut tincidunt, quam in tincidunt vestibulum, turpis ipsum porttitor nisi, et fermentum augue
+                                    lit eu neque. In at tempor dolor, sit amet dictum lacus. Praesent porta orci eget laoreet ultrices.
+                                </p> -->
+                            </div><!-- /.section-content -->
+                        </header>
+                    </section><!-- /.newsletter -->
+                </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+    <!-- end Academic Life, Campus Life, Newsletter -->
+
+    <!-- Divisions, Connect -->
+    <!-- <div class="block">
+        <div class="container">
+            <div class="block-dark-background">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <section id="division" class="has-dark-background">
+                            <header>
+                                <h2>Divisions</h2>
+                            </header>
+                            <div class="section-content">
+                                <ul class="list-links">
+                                    <li><a href="#">Accounting & Finance</a></li>
+                                    <li><a href="#">Advertising & Marketing</a></li>
+                                    <li><a href="#">Architecture & Interior</a></li>
+                                    <li><a href="#">Arts & Design</a></li>
+                                    <li><a href="#">Broadcasting & Journalism</a></li>
+                                    <li><a href="#">Business & Management</a></li>
+                                    <li><a href="#">Computing & IT</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-9 col-sm-8">
+                        <section id="connect" class="has-dark-background">
+                            <header>
+                                <h2>Connect</h2>
+                            </header>
+                            <div class="connect-block">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li class="active"><a href="#tab-twitter" data-toggle="pill"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                            <li><a href="#tab-facebook" data-toggle="pill"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade in active" id="tab-twitter">
+                                            <div class="col-md-3">
+                                                <article class="social-post twitter-post">
+                                                    <header>15 minutes ago</header>
+                                                    <figure><a href="#">@Miescuelaideal</a></figure>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam odio augue, accumsan ut massa ut, faucibus gravida turpis.
+                                                        <a href="http://bit.ly/1bMyz64">http://bit.ly/1bMyz64</a>
+                                                    </p>
+                                                </article>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <article class="social-post twitter-post">
+                                                    <header>2 hours ago</header>
+                                                    <figure><a href="#">@Miescuelaideal</a></figure>
+                                                    <p>
+                                                        Nullam odio augue, accumsan ut massa ut, faucibus gravida turpis. Nulla eleifend libero mi, at consequat tellus.
+                                                        <a href="http://bit.ly/1bMyz64">http://bit.ly/1bMyz64</a>
+                                                    </p>
+                                                </article>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <article class="social-post twitter-post">
+                                                    <header>February 02, 2014</header>
+                                                    <figure><a href="#">@Miescuelaideal</a></figure>
+                                                    <p>
+                                                        Ut at arcu sed justo laoreet iaculis ut nec leo. Aliquam laoreet orci eu egestas fermentum.
+                                                        <a href="http://bit.ly/1bMyz64">http://bit.ly/1bMyz64</a>
+                                                    </p>
+                                                </article>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-facebook">
+                                            <div class="col-md-3">
+                                                <article class="social-post facebook-post">
+                                                    <header>30 minutes ago</header>
+                                                    <figure><a href="#">@Miescuelaideal</a></figure>
+                                                    <p>
+                                                        Ut at arcu sed justo laoreet iaculis ut nec leo. Aliquam laoreet orci eu egestas fermentum.
+                                                        <a href="http://bit.ly/1bMyz64">http://bit.ly/1bMyz64</a>
+                                                    </p>
+                                                </article>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <article class="social-post facebook-post">
+                                                    <header>4 days ago</header>
+                                                    <figure><a href="#">@Miescuelaideal</a></figure>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam odio augue, accumsan ut massa ut, faucibus gravida turpis.
+                                                        <a href="http://bit.ly/1bMyz64">http://bit.ly/1bMyz64</a>
+                                                    </p>
+                                                </article>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <article class="social-post facebook-post">
+                                                    <header>One week ago</header>
+                                                    <figure><a href="#">@Miescuelaideal</a></figure>
+                                                    <p>
+                                                        Nullam odio augue, accumsan ut massa ut, faucibus gravida turpis. Nulla eleifend libero mi, at consequat tellus.
+                                                        <a href="http://bit.ly/1bMyz64">http://bit.ly/1bMyz64</a>
+                                                    </p>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end Divisions, Connect -->
+
+    <!-- Our Professors, Gallery -->
+    <div class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <section id="our-professors">
+                        <header>
+                            <h2>Top Universidades</h2>
+                        </header>
+                        <div class="section-content">
+                            <div class="professors">
+                                <article class="professor-thumbnail">
+                                    <figure class="professor-image"><a href="member-detail.html"><img src="img/professor.jpg" alt=""></a></figure>
+                                    <aside>
+                                        <header>
+                                            <a href="member-detail.html">Tecnológico de Monterrey</a>
+                                            <div class="divider"></div>
+                                            <figure class="professor-description">Licenciaturas e Ingenierías</figure>
+                                        </header>
+                                        <a href="member-detail.html" class="show-profile">Ver Más</a>
+                                    </aside>
+                                </article><!-- /.professor-thumbnail -->
+                                <article class="professor-thumbnail">
+                                    <figure class="professor-image"><a href="member-detail.html"><img src="img/professor-02.jpg" alt=""></a></figure>
+                                    <aside>
+                                        <header>
+                                            <a href="member-detail.html">Universidad del Valle de México</a>
+                                            <div class="divider"></div>
+                                            <figure class="professor-description">Licenciaturas e Ingenierías</figure>
+                                        </header>
+                                        <a href="member-detail.html" class="show-profile">Ver Más</a>
+                                    </aside>
+                                </article><!-- /.professor-thumbnail -->
+                                <a href="" class="read-more stick-to-bottom">Todas las Universidades</a>
+                            </div><!-- /.professors -->
+                        </div><!-- /.section-content -->
+                    </section><!-- /.our-professors -->
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-8 col-sm-8">
+                    <section id="gallery">
+                        <header>
+                            <h2>Galeria</h2>
+                        </header>
+                        <div class="section-content">
+                            <ul class="gallery-list">
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-01.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-02.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-03.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-04.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-05.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-06.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-07.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-08.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-09.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-10.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-11.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-12.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-13.jpg" alt=""></a></li>
+                                <li><a href="img/gallery-big-image.jpg" class="image-popup"><img src="img/image-14.jpg" alt=""></a></li>
+                            </ul>
+                            <a href="" class="read-more">Go to Gallery</a>
+                        </div><!-- /.section-content -->
+                    </section><!-- /.gallery -->
+                </div><!-- /.col-md-4 -->
+
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+    <!-- end Our Professors, Gallery -->
+
+    <!-- Partners, Make a Donation -->
+    <div class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-9">
+                    <section id="partners">
+                        <header>
+                            <h2>Universidades</h2>
+                        </header>
+                        <div class="section-content">
+                            <div class="logos">
+                                <div class="logo"><a href=""><img src="img/logo-partner-01.png" alt=""></a></div>
+                                <div class="logo"><a href=""><img src="img/logo-partner-02.png" alt=""></a></div>
+                                <div class="logo"><a href=""><img src="img/logo-partner-03.png" alt=""></a></div>
+                                <div class="logo"><a href=""><img src="img/logo-partner-04.png" alt=""></a></div>
+                                <div class="logo"><a href=""><img src="img/logo-partner-05.png" alt=""></a></div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- /.col-md-9 -->
+                <!-- <div class="col-md-3 col-sm-3">
+                    <section id="donation">
+                        <header>
+                            <h2>Make a Donation</h2>
+                        </header>
+                        <div class="section-content">
+                            <a href="" class="universal-button">
+                                <h3>Support the University of Universo!</h3>
+                                <figure class="date"><i class="fa fa-arrow-right"></i></figure>
+                            </a>
+                        </div>
+                    </section>
+                </div> -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+    <!-- end Partners, Make a Donation -->
+    </div>
+    <!-- end Page Content -->
+
+    <!-- Footer -->
+    <footer id="page-footer">
+        <section id="footer-top">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-social">
+                        <figure>Síguenos en:</figure>
+                        <div class="icons">
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-pinterest"></i></a>
+                            <a href=""><i class="fa fa-youtube-play"></i></a>
+                        </div><!-- /.icons -->
+                    </div><!-- /.social -->
+                    <div class="search pull-right">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                        </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.pull-right -->
+                </div><!-- /.footer-inner -->
+            </div><!-- /.container -->
+        </section><!-- /#footer-top -->
+
+        <section id="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <aside class="logo">
+                            <img src="img/logo-white.png" class="vertical-center">
+                        </aside>
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-4">
+                        <aside>
+                            <header><h4>Contáctanos</h4></header>
+                            <address>
+                                <strong>University of Universo</strong>
+                                <br>
+                                <span>4877 Spruce Drive</span>
+                                <br><br>
+                                <span>West Newton, PA 15089</span>
+                                <br>
+                                <abbr title="Telephone">Telephone:</abbr> +1 (734) 123-4567
+                                <br>
+                                <abbr title="Email">Email:</abbr> <a href="#">questions@youruniversity.com</a>
+                            </address>
+                        </aside>
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-4">
+                        <aside>
+                            <header><h4>Links importantes</h4></header>
+                            <ul class="list-links">
+                                <li><a href="#">Future Students</a></li>
+                                <li><a href="#">Alumni</a></li>
+                                <li><a href="#">Give a Donation</a></li>
+                                <li><a href="#">Professors</a></li>
+                                <li><a href="#">Libary & Health</a></li>
+                                <li><a href="#">Research</a></li>
+                            </ul>
+                        </aside>
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-4">
+                        <aside>
+                            <header><h4>Acerca de nosotros</h4></header>
+                            <p>Aliquam feugiat turpis quis felis adipiscing, non pulvinar odio lacinia.
+                                Aliquam elementum pharetra fringilla. Duis blandit, sapien in semper vehicula,
+                                tellus elit gravida odio, ac tincidunt nisl mi at ante. Vivamus tincidunt nunc nibh.
+                            </p>
+                            <div>
+                                <a href="" class="read-more">Todas las noticias</a>
+                            </div>
+                        </aside>
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+            <div class="background"><img src="img/background-city.png" class="" alt=""></div>
+        </section><!-- /#footer-content -->
+
+        <section id="footer-bottom">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="copyright">© 2019 Miescuelaideal. ALL RIGHTS RESERVED</div><!-- /.copyright -->
+                </div><!-- /.footer-inner -->
+            </div><!-- /.container -->
+        </section><!-- /#footer-bottom -->
+
+    </footer>
+    <!-- end Footer -->
+
+    </div>
+    <!-- end Wrapper -->
+
+
+<!--script-->
+    <script type="text/javascript" src="{{ asset('js/jquery-2.1.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/selectize.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.validate.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.placeholder.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jQuery.equalHeights.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/icheck.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.vanillabox-0.1.5.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/retina-1.1.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+
+    </body>
 </html>
