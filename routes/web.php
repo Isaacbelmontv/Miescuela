@@ -16,17 +16,25 @@ Route::get('/', function () {
 });
 
 /*Adminisitrador*/
-Route::get('/admin', function() {
-    return view('admin');
-})->name('admin');
+Route::get('/registroHome', function() {
+    return view('registroHome');
+})->name('registroHome');
 
-Route::get('/loginUser', function() {
-    return view('login');
-})->name('login');
+Route::get('/tableHome', function() {
+    return view('tableHome');
+})->name('tableHome');
 
-// Route::post('/login','Auth\LoginController@login');
+/*Get escuelas*/
+Route::get('/escuelas', function() {
+    return view('escuelas');
+})->name('escuelas');
 
-/*pruebas*/
+// Nos mostrará el formulario de login.
+Route::get('login', 'AuthController@showLogin');
+
+// Validamos los datos de inicio de sesión.
+Route::post('login', 'AuthController@postLogin');
+
 
 Auth::routes();
 

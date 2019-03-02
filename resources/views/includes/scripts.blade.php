@@ -1,0 +1,12 @@
+<script type="text/javascript" src="{{ asset('js/jquery-2.1.0.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/selectize.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.validate.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.placeholder.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jQuery.equalHeights.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/icheck.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.vanillabox-0.1.5.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/retina-1.1.0.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
